@@ -303,7 +303,7 @@ def ask_iface():
 def main():
     iface = ask_iface()
     top_n = ask_int(f"threads (1-{MAX_VOICES})", 10, 1, MAX_VOICES)
-    interval = ask_float("интервал, сек", 1.0, [0.5, 1, 2, 3])
+    interval = ask_float("interval", 1.0, [0.5, 1, 2, 3])
     mode = ask_mode()
 
     sniffer = AsyncSniffer(iface=iface, prn=on_packet, store=False)

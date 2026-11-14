@@ -14,6 +14,9 @@ RAM - waveform
 
 A console program that turns network traffic into sound
 
+```sudo setcap cap_net_raw,cap_net_admin=eip (readlink -f .venv/bin/python)```
+
+
 Port - pitch
 
 Traffic - volume
